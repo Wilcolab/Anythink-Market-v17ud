@@ -10,4 +10,31 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+Clone the repo using command: 
+```
+git clone https://github.com/ObelusFamily/Anythink-Market-v17ud.git
+```
+
+From the root directory, run the following docker command:
+```
+docker-compose up
+```
+Verify the backend is running by going to:
+```
+http://localhost:3000/api/ping
+```
+
+You should see the following: 
+msg: "Pong! Seems like Everythink is working, great job!
+
+Verifh the frontend is running by going to:
+```
+http://localhost:3001/register
+```
+Once you verify the front end is running, create a new user account.
+
+## Running commands on containters:
+Use:
+```
+docker exec
+```
